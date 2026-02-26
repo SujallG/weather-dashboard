@@ -1,0 +1,61 @@
+/* frontend/src/components/weather/ForecastList.css */
+.forecast-list {
+  margin-top: 2rem;
+}
+
+.forecast-list h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.forecast-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.forecast-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-date {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-temp {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.max-temp {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.min-temp {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.forecast-precip {
+  color: #666;
+  font-size: 0.9rem;
+}
